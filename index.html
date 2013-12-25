@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <title>Abu Dhabi Business Directory </title>
+  <meta charset="utf-8" />
+  
+  <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<!--
+  jCarousel library
+-->
+<script type="text/javascript" src="js/jquery.jcarousel.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/custom.js"></script>
+<!--
+  jCarousel skin stylesheet
+-->
+<link rel="stylesheet" type="text/css" href="skins/tango/skin.css" />
+<link rel="stylesheet" href="css/jquery-ui.css" />
+<style type="text/css" media="all">@import url("css/style.css");</style>
+<style type="text/css" media="all">@import url("css/customstyle.css");</style>
+<script src="js/jquery.colorbox.js"></script>
+<!--[if gte IE 8]>
+	<link rel="stylesheet" type="text/css" href="css/ie9.css" />
+<![endif]-->
+    <script type="text/javascript">
+    jQuery(document).ready(function() {
+    jQuery('#mycarousel').jcarousel({
+        wrap: 'circular',
+    });
+
+    jQuery('#mycarousel-2').jcarousel({
+        wrap: 'circular',
+        size: 16
+        
+    });
+
+    $('.front form .submit-btn').click(function(){
+                   window.location.href='search-result.html';
+                   return false;
+                });
+
+});
+
+    </script>
+
+     <script>
+        $(function() {
+        var availableTags = [
+        "Shopping",
+        "Super Market",
+        "Shoes and Leather Retail",
+        "Sport Equipment Retail",
+        "Souvenirs Retail",
+        "Second Hand Retail",
+        "Sunglasses",
+        "Scarves & Shawls",
+        "Suspenders"
+        ];
+        $( "#tags" ).autocomplete({
+        source: availableTags
+        });
+        });
+     </script>
+
+</head>
+
+<body class="html low front lang-en" >
+    <div id="wrapper" class="clearfix">
+
+        <!--Start header -->
+        <div class="header-nav">
+                <div id="navigation">
+                   
+
+                    <div id="menu">
+                        <ul>
+                            <li> <a href="index.html">Home</a></li>
+                            <li> <a href="update-bussiness.html">Update Business Details</a></li>
+                            <li> <a href="#">Help</a></li>
+                        </ul>
+
+                        <ul id="lang">
+                            <li> <a href="arabic-index.html">عربي</a></li>
+                        </ul>
+                        
+                    </div>
+
+                </div>
+        </div>
+        <div id="logo-wrapper">
+             <div id="logo">
+                <a href="index.html"><img class="size-auto" alt="Department of Economic Development" src="images/logo.png" title="Department of Economic Development" /></a>
+                 <div class="search-header">
+                    <div class="content">
+                        <form>
+                            <div class="label"><label>I'm looking for </label></div>
+                            <div>
+                                <div class="text-box ui-widget"><input id="tags" name="search" value="" placeholder="Service, Product & Category" class="search-text" type="textbox" /></div>
+                                <div class="text-box2">
+                                    <span class="text-box"><input name="search" value="" placeholder="Company" class="search-text" type="textbox" /></span>
+                                    <span class="search-location"><a href="javascript:void(0);">Set Location</a></span>
+                                    <span><input type="submit" class="submit-btn" name="submit"/></span>
+                                </div>
+
+                            </div>
+                        </form>
+                    </div>
+                </div>
+             </div>
+
+             
+        </div>
+
+        <!--End header -->
+ <div id="main_wrapper" class="content-wrapper clearfix">
+        <div id="content_wrapper" class="content-wrapper clearfix">
+            <!-- Start main content -->
+
+            <div id="main_content">
+                
+
+                <div class="search-header-2 clearfix">
+                    <div class="content clearfix">
+                        <form>
+                            <span class="label"><label>I' am looking for </label></span>
+                            <div id="form-box">
+                                 <span class="text-box"><input name="search" class="search-text category" type="textbox" />
+                                </span>
+                                <span class="text-box"><input name="search" class="search-text product" type="textbox" /></span>
+                                <span class="text-box"><input name="search" class="search-text company" type="textbox" /></span>
+                                <span class="search-location"><a>Search Location</a></span>
+                            </div>
+
+                            <span class="basic-search"><a>Basic Search </a></span>
+                            <span><input type="submit" class="submit-btn" name="submit" /></span>
+                           
+                        </form>
+                    </div>
+                </div>
+
+                <div class="category-content clearfix">
+                    <div class="content">
+                        <div class="citizens category wrap">
+                            <h2>For Citizens</h2>
+                            <ul id="mycarousel" class="jcarousel-skin-tango">
+                                <li class="health"><a href="#">Health & Social Work</a></li>
+                                <li class="sports"><a href="#">Sports & Beauty</a></li>
+                                <li class="shopping"><a href="search-result.html">Shopping</a></li>
+                                <li class="food"><a href="#">Food & Drinks</a></li>
+                                <li class="public"><a href="">Education</a></li>
+                                <li class="accomodation"><a href="#">Accomodation</a></li>
+                                <li class="culture"><a href="#">Entertainment & Culture</a></li>
+                                <li class="it"><a href="#">IT & Media</a></li>
+                                <li class="finance"><a href="#">Legal, Insurance & Finance</a></li>
+                                <li class="construction"><a href="#">Construction & Real Estate</a></li>
+                                <li class="vehicle"><a href="#">Transportation & Vehicle</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="business category wrap">
+                            <h2>For Businesses</h2>
+                            <ul id="mycarousel-2" class="jcarousel-skin-tango">
+                                
+                                <li class="manufacturing"><a href="#">Manufacturing</a></li>
+                                <li class="trade"><a href="#">Trade</a></li>
+                                <li class="mining"><a href="#">Mining</a></li>
+                                <li class="management"><a href="#">Management & Services</a></li>
+                                <li class="civil"><a href="#">Civil Services</a></li>
+                                <li class="agriculture"><a href="#">Agriculture</a></li>
+                                <li class="petroleum"><a href="#">Petroleum & Gas</a></li>
+                                <li class="it"><a href="search-result.html">Computers & Internet</a></li>
+                                <li class="finance"><a href="#">Legal, Insurances & Finance</a></li>
+                                <li class="construction"><a href="#">Real Estate</a></li>
+                                <li class="mobile"><a href="#">Mobility & Vehicles</a></li>
+                                <li class="equipment"><a href="#">Equipment</a></li>
+                                <li class="sale"><a href="#">Wholesale</a></li>
+                                <li class="marketing"><a href="#">Marketing</a></li>
+                                <li class="institutions"><a href="#">Institutions</a></li>
+                                <li class="services"><a href="#">Services</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="wel-text clearfix">
+                            <img src="images/welcome.png" />
+                        </div>
+                    </div>
+                </div>
+                
+             
+
+            </div>
+
+            <!-- End main content -->
+
+
+             <!-- Start footer -->
+
+            <div id="footer">
+
+            </div>
+
+            <!-- End footer -->
+
+        </div>
+     <div id="suggestion-wrapper">
+         <div class="suggestion-content clearfix">
+            <div class="content">
+                <div class="heading"><h2>Our Suggestions</h2></div>
+                <div class="footer-menu">
+                    <ul>
+                        <li><a href="#">Internet Services</a>|</li>
+                        <li><a href="#">IT Consulting</a>|</li>
+                        <li><a href="#">Website Hosting</a>|</li>
+						<li><a href="#">Social Media Advertising</a>|</li>
+                        <li><a href="#">Web Application Development</a>|</li>
+                        <li><a href="#">Mobile Application Development</a>|</li>
+                        <li><a href="#">Website Optimisation</a>|</li>
+						<li><a href="#">Internet Marketing</a>|</li>
+                        <li><a href="#">Search Engine Optimisation</a>|</li>
+                        <li><a href="#">Database Engineering</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+     </div>
+
+     
+ </div>
+
+        <!--Start header -->
+        <div class="footer-nav">
+                <div id="footer-menu">
+                    
+                    <div id="menu">
+                        <ul>
+                            <li> <a href="#">Imprint</a></li>
+                            <li> <a href="#">Terms of use</a></li>
+                            <li> <a href="#">Sitemap</a></li>
+                            <li> <a href="#">About us</a></li>
+                            <li> <a href="#">Contact</a></li>
+
+                        </ul>
+
+                        <ul id="lang">
+                            <li>&copy;2013</li>
+                        </ul>
+
+                    </div>
+
+                </div>
+        </div>
+
+        <div class="content search-location-map">
+		<div class="close-map">
+                     <a href="javascript:void(0);">Close</a>
+                 </div>
+                 <img src="images/image-map.jpg" alt="" />
+                 <div class="region">
+                     <label>Change Region View</label>
+                     <select>
+                         <option>Abu Dhabi</option>
+                         <option>Al Ain</option>
+                         <option>Western Region</option>
+                     </select>
+                 </div>
+
+                 <div class="confirm">
+                     <a href="javascript:void(0);">Confirm Location</a>
+                 </div>
+         </div>
+
+
+    </div>
+</body>
+</html>
